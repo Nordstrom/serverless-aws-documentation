@@ -217,6 +217,11 @@ module.exports = function() {
           );
           this.addDocumentationToApiGateway(
             resource,
+            eventTypes.http.documentation.pathParams,
+            'path'
+          );
+          this.addDocumentationToApiGateway(
+            resource,
             eventTypes.http.documentation.queryParams,
             'querystring'
           );
